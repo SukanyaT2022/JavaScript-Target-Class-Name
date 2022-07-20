@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, fuga!</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, fuga!</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, fuga!</p>
+    <p class="para">We use class - target class for this one</p>
+
+    <p id="para">We use ID for this one- target id</p>
+    <ul>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+    </ul>
+
+    <h1>beautiful flowers</h1>
+    <h1>beautiful sky</h1>
+</body>
+<script>
+    //target Class
+    var a = document.getElementsByClassName("para")[3];
+    a.style.color = "pink";
+    a.style.background = "lightgreen";
+    a.style.padding = "20px";
+    a.style.fontSize = "24px";
+
+    // target id
+    var b = document.getElementById("para");//id does not have index like class ex[0]
+    b.style.color = "purple";
+    b.style.background = "lightblue";
+    b.style.padding = "40px";
+    b.style.fontSize = "40px";
+
+    //target li
+    var c = document.getElementsByTagName("li")[2];
+    c.style.background = "coral";
+
+    //targeth1
+    document.getElementsByTagName("h1")[1]
+        .style.color = "pink";
+
+
+
+
+</script>
+
+</html>
